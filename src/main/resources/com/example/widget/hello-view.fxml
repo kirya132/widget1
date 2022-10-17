@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.widget.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="621.0" style="-fx-background-color: #395ce7;" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.widget.HelloController">
    <children>
-      <AnchorPane layoutX="166.0" layoutY="65.0" prefHeight="200.0" prefWidth="200.0">
-         <children>
-            <ImageView fx:id="SteamUp" fitHeight="103.0" fitWidth="115.0" layoutX="60.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../java/com/example/widget/image/8547091_steam_icon.png" />
-               </image>
-            </ImageView>
-         </children>
-      </AnchorPane>
+      <Button fx:id="buttonsteam" layoutX="57.0" layoutY="108.0" mnemonicParsing="false" opacity="0.0" prefHeight="61.0" prefWidth="68.0" textFill="#395ce7" />
+
+      <Button fx:id="buttondiscord" layoutX="160.0" layoutY="107.0" mnemonicParsing="false" opacity="0.0" prefHeight="62.0" prefWidth="62.0" text="Button" />
+      <Button fx:id="mycomputer" layoutX="254.0" layoutY="107.0" mnemonicParsing="false" opacity="0.0" prefHeight="62.0" prefWidth="62.0" text="Button" />
+      <ImageView fitHeight="70.0" fitWidth="75.0" layoutX="56.0" layoutY="103.0" onMouseClicked="#mouseClickedSteam" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/8547091_steam_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="91.0" layoutX="156.0" layoutY="103.0" onMouseClicked="#mouseClickedDiscord" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/discord.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="68.0" layoutX="251.0" layoutY="103.0" onMouseClicked="#mouseClickedComputer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/mycomputer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="20.0" layoutX="600.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#mouseClickedClose">
+         <image>
+            <Image url="@../../../image/Close.png" />
+         </image>
+      </ImageView>
+
    </children>
 </AnchorPane>
